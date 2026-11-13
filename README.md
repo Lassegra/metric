@@ -31,9 +31,9 @@ Calm typography, high contrast, and effortless sensor control — built for moni
 
 <br>
 
-## Designed to Stay Out of Your Way
+## Built Around Your Setup
 
-By default, **Metric is read-only** — your bike computer stays in charge while Metric displays your workout cleanly on a larger screen. Riding without a head unit? Enable **ERG Control** (`FTMS`) and automatic **TCX Export** directly inside Metric.
+Ride alongside your bike computer as a distraction-free display companion — or let Metric control your smart trainer directly with **ERG Control** (`FTMS`) and automatic **TCX Export** to your `Downloads` folder.
 
 <table>
   <tr>
