@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+._*
+
+# Keep compiled binaries attached to GitHub Releases rather than tracked in Git
+*.zip
+*.dmg
