@@ -1,68 +1,126 @@
+<div align="center">
+
+<img src="assets/app-icon.png" width="124" alt="Metric app icon">
+
 # Metric Cycling
 
-**Metric Cycling** is the official download repository for **Metric**, a native macOS app for structured indoor cycling workouts: smart trainer telemetry (FTMS & Cycling Power), heart rate, optional FTMS ERG control, compatible Bluetooth handlebar remotes, synchronized group starts (`Sync :00`), TCX export, and optional Intervals.icu integration — designed with high contrast and clean typography for external monitors and projectors.
+**Metric** is a native macOS cockpit for structured indoor cycling.<br>
+Calm typography, high contrast, and effortless sensor control — built for monitors and projectors.
 
-> **Project Name vs. App Name:** On GitHub, this project is titled **Metric Cycling** so cyclists can find it easily. After downloading and unzipping `Metric.zip`, the macOS application itself is consistently named **Metric** (`Metric.app`).
+<br>
 
-**Default Role:** By default, your bike computer stays in charge — **Metric is read-only**, does not control the trainer, and stores no ride files. Optionally, you can enable **ERG control** (FTMS) and automatic **TCX export** to your `Downloads` folder in Settings.
+<a href="https://github.com/Lassegra/metric/releases/latest/download/Metric.zip">
+  <img src="assets/download-button.png" width="212" alt="Download Metric for macOS">
+</a>
 
----
+<p>
+  <a href="https://github.com/Lassegra/metric/releases/tag/v1.0.0"><strong>Version 1.0.0</strong></a>
+  &nbsp;·&nbsp;
+  macOS 14+
+  &nbsp;·&nbsp;
+  Apple Silicon & Intel
+  &nbsp;·&nbsp;
+  <a href="https://github.com/Lassegra/metric/releases">DMG & Checksums</a>
+</p>
 
-## Download
+<br>
 
-- **[Download Metric for macOS (`Metric.zip`)](https://github.com/Lassegra/metric/releases/latest/download/Metric.zip)** *(macOS 14+, Universal Binary for Apple Silicon & Intel)*
-- **[All Releases, DMG Installer & SHA-256 Checksums](https://github.com/Lassegra/metric/releases)**
+<img src="screenshots/ride-1920.png" width="100%" alt="Metric live cockpit workout view">
 
----
+</div>
 
-![Metric Cockpit Ride View](screenshots/ride-1920.png)
+<br>
 
-| Home & Workout Preview | Sensors & Handlebar Remotes | Post-Ride Summary |
-|---|---|---|
-| ![Metric Home](screenshots/home-1280.png) | ![Metric Sensors](screenshots/sensors-click.png) | ![Metric Summary](screenshots/summary-1440.png) |
+## Designed to Stay Out of Your Way
 
----
+By default, **Metric is read-only** — your bike computer stays in charge while Metric displays your workout cleanly on a larger screen. Riding without a head unit? Enable **ERG Control** (`FTMS`) and automatic **TCX Export** directly inside Metric.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="screenshots/home-1280.png" width="100%" alt="Home and workout profile preview">
+      <p><strong>Plan & Preview</strong><br>
+      Inspect every interval at a glance with zone colors, target watts, IF/TSS estimates, and one-click <strong>Copy</strong> for training partners.</p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="screenshots/sensors-click.png" width="100%" alt="Bluetooth sensors, ERG control, and handlebar remotes">
+      <p><strong>Sensors, ERG & Remotes</strong><br>
+      Pair smart trainers (<code>FTMS</code> / <code>Cycling Power</code>), heart rate straps, and compatible Bluetooth handlebar remotes with automatic reconnect.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="screenshots/ride-sync.png" width="100%" alt="Synchronized whole-minute start overlay">
+      <p><strong>Train Together with Sync :00</strong><br>
+      Share the workout text with <strong>Copy</strong>, paste it on both Macs, and start at the exact same second using system clock time — no accounts needed.</p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="screenshots/summary-1440.png" width="100%" alt="Post-ride analytics and TCX export summary">
+      <p><strong>Honest Post-Ride Summary</strong><br>
+      Review Duration, Avg Power, NP, IF, TSS, target accuracy, time in zones, and export clean <code>Metric_*.tcx</code> files to <code>Downloads</code>.</p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+## Highlights
+
+- **Offline Custom Workouts (`⌘ N`)** — Write workouts in compact text syntax, pick from 4 built-in templates, or import `.txt` files and clipboard text. Everything stays local on your Mac.
+- **Optional Intervals.icu Sync** — Enter a personal API key in **Settings (`⌘ ,`)** to load scheduled workouts (today + 6 days) and your Ride FTP. Keys stay exclusively in the **macOS Keychain** with strictly read-only HTTPS GET calls.
+- **Keep Your Bike Computer Connected** — Many trainers and straps allow only one or two concurrent Bluetooth connections. Pair your bike computer over **ANT+** whenever available so Bluetooth stays free for your Mac.
+
+<br>
 
 ## Installing
 
-1. Download **`Metric.zip`** from the link above, unzip it, and move **`Metric.app`** into **`/Applications`** *(or download `Metric.dmg` from Releases and drag `Metric.app` onto `Applications`)*.
-2. **First launch on macOS:** Because Metric is distributed directly without a paid Apple Developer certificate (ad-hoc signed, not notarized), macOS requires one confirmation step on first launch (and after updates):
-   - Open **System Settings → Privacy & Security** → scroll down → next to *"Metric" was blocked*, click **Open Anyway**.
-   - Alternatively in Terminal: `xattr -dr com.apple.quarantine "/Applications/Metric.app"`
-3. Click **Allow** when macOS prompts for **Bluetooth** permission.
+1. Click **[Download Metric](https://github.com/Lassegra/metric/releases/latest/download/Metric.zip)**, unzip **`Metric.zip`**, and move **`Metric.app`** into **`/Applications`** *(or install from `Metric.dmg` under [Releases](https://github.com/Lassegra/metric/releases))*.
+2. **First launch:** Because Metric is distributed directly outside the Mac App Store (ad-hoc signed without a paid Apple Developer certificate), open **System Settings → Privacy & Security** → scroll down → click **Open Anyway** next to *"Metric" was blocked*.
+   ```bash
+   xattr -dr com.apple.quarantine "/Applications/Metric.app"
+   ```
+3. Click **Allow** when macOS asks for **Bluetooth** permission.
+
+<br>
+
+<details>
+<summary><strong>Keyboard Shortcuts & Workout Syntax</strong></summary>
+
+<br>
+
+| Shortcut | Action | | Shortcut | Action |
+|---|---|---|---|---|
+| `Space` | Pause / Resume | | `⌘ ↩` | Start workout |
+| `←` / `→` | Previous / Next step | | `F` or `⌃⌘F` | Fullscreen |
+| `+` / `−` | Jump 5 s forward / back | | `M` | Sound on / off |
+| `Esc` | Pause | | `⌘ B` | Sensors |
+| `⌘ .` | End workout | | `⌘ ,` | Settings |
+| | | | `?` | Shortcuts overview |
+
+<br>
+
+```text
+Warmup
+- 10m ramp 50-75% 85rpm
+
+Sweetspot
+3x
+- 10m 90% 88rpm
+- 4m 55% 90rpm
+
+Cooldown
+- 6m ramp 60-45% 85rpm
+```
+
+</details>
 
 ---
 
-## Features & Quick Setup
+<div align="center">
 
-- **Sensors (`⌘B`):** Pair your smart trainer (`0x1826` FTMS / `0x1818` Cycling Power) and heart rate strap (`0x180D` Heart Rate). Paired sensors reconnect automatically.
-  > **Tip — Bike Computer via ANT+:** Many trainers and straps support only one or two concurrent Bluetooth connections. Pair your bike computer over **ANT+** whenever possible so Bluetooth stays free for your Mac.
-- **Optional ERG Control (FTMS `0x2AD9`):** Toggle **ERG Control** directly in **Sensors** or **Settings → During Ride** if you ride without a head unit. Leave it off when running a workout on your bike computer simultaneously.
-- **Handlebar Remotes:** Pair compatible Bluetooth handlebar remotes and customize button actions in **Settings**.
-- **Offline Custom Workouts (`⌘N`):** Create and edit workouts with compact text syntax, start from 4 built-in templates, import `.txt` files or clipboard text, duplicate, and pin workouts to the top.
-- **Synchronized Group Starts (`Sync :00`):** Copy workout text with one click (`Copy`) to share with training partners and start simultaneously at the next whole minute (`−1 min`, `+1 min`, `Start Now`) using system clock time — no accounts required.
-- **Optional Intervals.icu Sync:** Add a personal API key in **Settings (`⌘,`)** to load scheduled workouts (today + 6 days) and your cycling FTP. Your key stays in the macOS Keychain (`kSecAttrAccessibleWhenUnlockedThisDeviceOnly`) and sends strictly read-only HTTPS GET calls to `intervals.icu`.
-- **Summary & TCX Export:** Review Duration, Avg Power, NP, IF, TSS, Avg/Max HR, Avg Cadence, target accuracy, and time in zones after each ride. Export manually (`Export TCX …`) or enable automatic saving (`Metric_*.tcx`) to `Downloads`.
+**Privacy:** No accounts, no tracking, no analytics.<br>
+[Release Notes](CHANGELOG.md) &nbsp;·&nbsp; [All Releases](https://github.com/Lassegra/metric/releases) &nbsp;·&nbsp; [License](LICENSE)
 
-## Keyboard Shortcuts
+<sub>© 2026 Lasse Grabenhenrich. All rights reserved. Official releases may be downloaded for personal use; modification or redistribution is not permitted.</sub>
 
-| Shortcut | Action |
-|---|---|
-| `Space` | Pause / Resume |
-| `←` / `→` | Previous / Next step |
-| `+` / `−` | Jump 5 s forward / back |
-| `Esc` | Pause |
-| `⌘ .` | End workout |
-| `⌘ ↩` | Start workout |
-| `F` or `⌃⌘F` | Fullscreen |
-| `M` | Sound on / off |
-| `⌘ B` | Sensors |
-| `⌘ ,` | Settings |
-| `?` | Keyboard shortcuts overview |
-
----
-
-## Privacy & License
-
-- **Privacy:** No accounts, no tracking, no analytics, and no third-party telemetry.
-- **License:** Copyright © 2026 Lasse Grabenhenrich. **All rights reserved.** See [LICENSE](LICENSE). Official release binaries may be downloaded and used for personal, non-commercial indoor cycling; modification or redistribution is not permitted.
+</div>
