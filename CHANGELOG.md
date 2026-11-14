@@ -1,5 +1,16 @@
 # Changelog – Metric Cycling (App: Metric)
 
+All notable changes to this project are documented in this file.
+Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (`MAJOR.MINOR.PATCH` + monotonically increasing macOS `CFBundleVersion` build).
+
+## [Unreleased]
+
+## Version 1.2.1 (Build 4) – 2026-11-14
+
+### Changed
+- **Clean Release Binaries:** Strip Mach-O debug symbols (`strip -S -x`) before ad-hoc code signing so local filesystem build paths are never embedded in distributed `Metric.app`, `Metric.dmg`, or `Metric.zip` artifacts.
+- **Single-Source Versioning & Update Handling:** Unified version and build synchronization via `VERSION` (`SemVer 2.0.0 + Build`) into `Info.plist` and `AppVersion`, and added SemVer/pre-release-aware update comparison in `AppModel`.
+
 ## Version 1.2.0 (Build 3) – 2026-11-14
 
 ### Highlights

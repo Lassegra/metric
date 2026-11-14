@@ -14,7 +14,7 @@ Calm typography, high contrast, and effortless sensor control — built for moni
 </a>
 
 <p>
-  <a href="https://github.com/Lassegra/metric/releases/tag/v1.2.0"><strong>Version 1.2.0</strong></a>
+  <a href="https://github.com/Lassegra/metric/releases/tag/v1.2.1"><strong>Version 1.2.1</strong></a>
   &nbsp;·&nbsp;
   macOS 14+
   &nbsp;·&nbsp;
