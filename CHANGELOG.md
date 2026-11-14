@@ -5,6 +5,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Sem
 
 ## [Unreleased]
 
+## Version 1.2.2 (Build 5) – 2026-11-14
+
+### Changed
+- **Unified Sidebar Workout Cards:** Intervals.icu scheduled events in `HomeView` now use the same bordered card layout, `14pt`/`12pt` typography, duration-first metadata (`docDuration` fallback to `movingTime`), leading icon (`calendar`), and context menu actions (including **Save to Custom Workouts**) as Custom Workouts.
+- **Summary Transition & End-Screen Polish:** `AppModel.endRide()` switches to `SummaryView` immediately before writing the optional TCX export, preserves summaries for naturally completed workouts shorter than 10 seconds, scales the `WorkoutProfileView` bars in Summary by each step's recorded live intensity (`stepBiasFactors`), and keeps the summary header timestamp single-line while truncating long workout titles cleanly.
+
 ## Version 1.2.1 (Build 4) – 2026-11-14
 
 ### Changed
