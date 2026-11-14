@@ -9,18 +9,18 @@ Calm typography, high contrast, and effortless sensor control — built for moni
 
 <br>
 
-<a href="https://github.com/Lassegra/metric/releases/latest/download/Metric.zip">
+<a href="https://github.com/Lassegra/metric/releases/latest/download/Metric.dmg">
   <img src="assets/download-button.png" width="212" alt="Download Metric for macOS">
 </a>
 
 <p>
-  <a href="https://github.com/Lassegra/metric/releases/tag/v1.0.0"><strong>Version 1.0.0</strong></a>
+  <a href="https://github.com/Lassegra/metric/releases/tag/v1.1.0"><strong>Version 1.1.0</strong></a>
   &nbsp;·&nbsp;
   macOS 14+
   &nbsp;·&nbsp;
   Apple Silicon & Intel
   &nbsp;·&nbsp;
-  <a href="https://github.com/Lassegra/metric/releases">DMG & Checksums</a>
+  <a href="https://github.com/Lassegra/metric/releases">ZIP & Checksums</a>
 </p>
 
 <br>
@@ -74,7 +74,7 @@ Ride alongside your bike computer as a distraction-free display companion — or
 
 ## Installing
 
-1. Click **[Download Metric](https://github.com/Lassegra/metric/releases/latest/download/Metric.zip)**, unzip **`Metric.zip`**, and move **`Metric.app`** into **`/Applications`** *(or install from `Metric.dmg` under [Releases](https://github.com/Lassegra/metric/releases))*.
+1. Click **[Download Metric](https://github.com/Lassegra/metric/releases/latest/download/Metric.dmg)**, open **`Metric.dmg`**, and drag **`Metric`** into **`Applications`** *(or download `Metric.zip` under [Releases](https://github.com/Lassegra/metric/releases))*.
 2. **First launch:** Because Metric is distributed directly outside the Mac App Store (ad-hoc signed without a paid Apple Developer certificate), open **System Settings → Privacy & Security** → scroll down → click **Open Anyway** next to *"Metric" was blocked*.
    ```bash
    xattr -dr com.apple.quarantine "/Applications/Metric.app"

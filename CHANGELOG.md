@@ -1,5 +1,14 @@
 # Changelog – Metric Cycling (App: Metric)
 
+## Version 1.1.0 (Build 2) – 2026-11-14
+
+### Highlights
+- **Power & Cadence Focused Training View (`RideView`):** Prioritizes live Power and Cadence telemetry and scales cards, countdowns, and the full-workout profile dynamically across different window sizes and aspect ratios to minimize unused whitespace.
+- **Reliable TCX Export (`Download TCX` & `Save As …`):** Added a 1-click **Download TCX** action that saves `.tcx` files directly to `Downloads`, fixed the native macOS **Save As …** sheet dialog by registering `.tcx` (`local.metriccycling.tcx`) via `UTImportedTypeDeclarations` in `Info.plist`, and added inline export error reporting.
+- **Copy Confirmation Feedback:** Workout **Copy** controls now show immediate visual confirmation (`Copied`) with animation so it is clear when the workout text is copied to the clipboard.
+- **Reset All Settings:** Added a destructive **Reset All Settings** section (**Reset All …** → **Reset Everything** confirmation) in Settings that restores FTP, accent color, preferences, Intervals.icu Keychain API key, custom workouts, and paired Bluetooth devices/remotes back to defaults.
+- **Styled Drag-to-Applications `Metric.dmg` Installer:** Built an Apple-style Finder DMG installer (`660×380 pt` Retina background with volume icon, titanium label capsules, and Gatekeeper first-launch note) and updated installation docs to prefer `Metric.dmg` over `Metric.zip`.
+
 ## Version 1.0.0 (Build 1) – 2026-11-13
 
 First public release for macOS 14+ (Universal Binary for Apple Silicon & Intel, distributed directly via GitHub Releases as `Metric.zip` and `Metric.dmg`).
