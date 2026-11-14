@@ -1,5 +1,13 @@
 # Changelog – Metric Cycling (App: Metric)
 
+## Version 1.2.0 (Build 3) – 2026-11-14
+
+### Highlights
+- **Automatic In-App Update Checks:** Metric now checks `Lassegra/metric` on GitHub Releases once on launch (quietly ignoring offline errors and skipped versions), adds a subtle sidebar update pill, an **Updates** section in Settings (`Automatic update check` + **Check Now …**), **Metric → Check for Updates …**, and an in-app **Update** sheet linking straight to `Metric.dmg`.
+- **Live Workout Intensity ("Bias"):** Adjust target power live during a ride from `50%` to `150%` in `±5%` steps using the compact top-bar control (`− 100% +`), keyboard shortcuts (`↑` / `↓`, `0` to reset), the `Workout` menu, or compatible handlebar remotes. Updates FTMS ERG targets immediately, rescales the profile chart/zone colors/Up Next target, and scores post-ride `Power Hit Rate` accurately against the biased targets.
+- **Redesigned Handlebar Remote Defaults:** Mapped `+` / `−` to **Intensity +5% / −5%**, `B` to **Reset intensity (100%)**, `A` to **Pause / Resume** (and Home screen Start), `←` / `→` to steps, `↑` / `↓` to `±5 s`, and `Y` to **Sound on/off** (all mappings remain customizable in Settings).
+- **Live Preview in Workout Editor:** Upgraded the **Add / Edit Workout** sheet into a split-pane editor with real-time `Duration`, `IF`, `TSS`, and `Avg Target` metrics, live power profile chart, line-referenced parser notices, scrollable interval list, and an empty-state quick syntax guide.
+
 ## Version 1.1.0 (Build 2) – 2026-11-14
 
 ### Highlights

@@ -14,7 +14,7 @@ Calm typography, high contrast, and effortless sensor control — built for moni
 </a>
 
 <p>
-  <a href="https://github.com/Lassegra/metric/releases/tag/v1.1.0"><strong>Version 1.1.0</strong></a>
+  <a href="https://github.com/Lassegra/metric/releases/tag/v1.2.0"><strong>Version 1.2.0</strong></a>
   &nbsp;·&nbsp;
   macOS 14+
   &nbsp;·&nbsp;
@@ -66,8 +66,10 @@ Ride alongside your bike computer as a distraction-free display companion — or
 
 ## Highlights
 
-- **Offline Custom Workouts (`⌘ N`)** — Write workouts in compact text syntax, pick from 4 built-in templates, or import `.txt` files and clipboard text. Everything stays local on your Mac.
+- **Offline Custom Workouts (`⌘ N`)** — Write workouts in compact text syntax with a live profile chart, IF/TSS metrics, parser notices, and interval breakdown, pick from 4 built-in templates, or import `.txt` files and clipboard text. Everything stays local on your Mac.
+- **Live Workout Intensity (`50%`–`150%`)** — Dial target watts up or down in `±5%` steps mid-ride from the cockpit bar, keyboard (`↑` / `↓`, `0` to reset), or a handlebar remote without interrupting ERG control.
 - **Optional Intervals.icu Sync** — Enter a personal API key in **Settings (`⌘ ,`)** to load scheduled workouts (today + 6 days) and your Ride FTP. Keys stay exclusively in the **macOS Keychain** with strictly read-only HTTPS GET calls.
+- **Automatic Update Checks** — Optionally checks GitHub Releases on launch (or manually via **Metric → Check for Updates …**) with release highlights and a direct download link for `Metric.dmg`.
 - **Keep Your Bike Computer Connected** — Many trainers and straps allow only one or two concurrent Bluetooth connections. Pair your bike computer over **ANT+** whenever available so Bluetooth stays free for your Mac.
 
 <br>
@@ -92,10 +94,11 @@ Ride alongside your bike computer as a distraction-free display companion — or
 |---|---|---|---|---|
 | `Space` | Pause / Resume | | `⌘ ↩` | Start workout |
 | `←` / `→` | Previous / Next step | | `F` or `⌃⌘F` | Fullscreen |
-| `+` / `−` | Jump 5 s forward / back | | `M` | Sound on / off |
-| `Esc` | Pause | | `⌘ B` | Sensors |
-| `⌘ .` | End workout | | `⌘ ,` | Settings |
-| | | | `?` | Shortcuts overview |
+| `↑` / `↓` | Intensity `+5%` / `−5%` | | `M` | Sound on / off |
+| `0` | Reset intensity (`100%`) | | `⌘ B` | Sensors |
+| `+` / `−` | Jump 5 s forward / back | | `⌘ ,` | Settings |
+| `Esc` | Pause | | `?` | Shortcuts overview |
+| `⌘ .` | End workout | | | |
 
 <br>
 
