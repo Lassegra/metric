@@ -14,7 +14,7 @@ Calm typography, high contrast, and effortless sensor control — built for moni
 </a>
 
 <p>
-  <a href="https://github.com/Lassegra/metric/releases/tag/v1.2.2"><strong>Version 1.2.2</strong></a>
+  <a href="https://github.com/Lassegra/metric/releases/tag/v1.3.0"><strong>Version 1.3.0</strong></a>
   &nbsp;·&nbsp;
   macOS 14+
   &nbsp;·&nbsp;
@@ -40,12 +40,12 @@ Ride alongside your bike computer as a distraction-free display companion — or
     <td width="50%" valign="top">
       <img src="screenshots/home-1280.png" width="100%" alt="Home and workout profile preview">
       <p><strong>Plan & Preview</strong><br>
-      Inspect every interval at a glance with zone colors, target watts, IF/TSS estimates, and one-click <strong>Copy</strong> for training partners.</p>
+      Inspect grouped workout phases, collapsed repeat rounds, interactive profile charts, IF/TSS estimates, and one-click <strong>Copy</strong> for training partners.</p>
     </td>
     <td width="50%" valign="top">
       <img src="screenshots/sensors-click.png" width="100%" alt="Bluetooth sensors, ERG control, and handlebar remotes">
       <p><strong>Sensors, ERG & Remotes</strong><br>
-      Pair smart trainers (<code>FTMS</code> / <code>Cycling Power</code>), heart rate straps, and compatible Bluetooth handlebar remotes with automatic reconnect.</p>
+      Pair smart trainers (<code>FTMS</code> / <code>Cycling Power</code>), heart rate straps, and compatible Bluetooth handlebar remotes with live button feedback and per-controller <strong>Button Mapping</strong> right inside Sensors.</p>
     </td>
   </tr>
   <tr>
@@ -66,8 +66,9 @@ Ride alongside your bike computer as a distraction-free display companion — or
 
 ## Highlights
 
+- **Focused Instrument Cockpit** — Matte high-contrast 3-column telemetry (`Power`, `Cadence`, `Heart Rate`) with `SF Pro Expanded` typography, calibrated target gauges, calm steady-state readouts with crisp out-of-target action cues, and an always-visible wall clock (even while paused).
 - **Offline Custom Workouts (`⌘ N`)** — Write workouts in compact text syntax with a live profile chart, IF/TSS metrics, parser notices, and interval breakdown, pick from 4 built-in templates, or import `.txt` files and clipboard text. Everything stays local on your Mac.
-- **Live Workout Intensity (`50%`–`150%`)** — Dial target watts up or down in `±5%` steps mid-ride from the cockpit bar, keyboard (`↑` / `↓`, `0` to reset), or a handlebar remote without interrupting ERG control.
+- **Live Workout Intensity (`50%`–`150%`)** — Dial target watts up or down in `±5%` steps mid-ride from the cockpit bar, keyboard (`↑` / `↓`, `0` to reset), or a mapped handlebar remote button without interrupting ERG control.
 - **Optional Intervals.icu Sync** — Enter a personal API key in **Settings (`⌘ ,`)** to load scheduled workouts (today + 6 days) and your Ride FTP. Keys stay exclusively in the **macOS Keychain** with strictly read-only HTTPS GET calls.
 - **Automatic Update Checks** — Optionally checks GitHub Releases on launch (or manually via **Metric → Check for Updates …**) with release highlights and a direct download link for `Metric.dmg`.
 - **Keep Your Bike Computer Connected** — Many trainers and straps allow only one or two concurrent Bluetooth connections. Pair your bike computer over **ANT+** whenever available so Bluetooth stays free for your Mac.
