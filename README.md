@@ -14,7 +14,7 @@ Calm typography, high contrast, and effortless sensor control — built for moni
 </a>
 
 <p>
-  <a href="https://github.com/Lassegra/metric/releases/tag/v1.3.0"><strong>Version 1.3.0</strong></a>
+  <a href="https://github.com/Lassegra/metric/releases/tag/v1.4.0"><strong>Version 1.4.0</strong></a>
   &nbsp;·&nbsp;
   macOS 14+
   &nbsp;·&nbsp;
@@ -25,7 +25,7 @@ Calm typography, high contrast, and effortless sensor control — built for moni
 
 <br>
 
-<img src="screenshots/v1.3.0/ride-1920.png" width="100%" alt="Metric live cockpit workout view">
+<img src="screenshots/v1.4.0/ride-1920.png" width="100%" alt="Metric live cockpit workout view">
 
 </div>
 
@@ -38,26 +38,38 @@ Ride alongside your bike computer as a distraction-free display companion — or
 <table>
   <tr>
     <td width="50%" valign="top">
-      <img src="screenshots/v1.3.0/home-1280.png" width="100%" alt="Home and workout profile preview">
+      <img src="screenshots/v1.4.0/home-1280.png" width="100%" alt="Home and workout profile preview">
       <p><strong>Plan & Preview</strong><br>
       Inspect grouped workout phases, collapsed repeat rounds, interactive profile charts, IF/TSS estimates, and one-click <strong>Copy</strong> for training partners.</p>
     </td>
     <td width="50%" valign="top">
-      <img src="screenshots/v1.3.0/sensors-click.png" width="100%" alt="Bluetooth sensors, ERG control, and handlebar remotes">
+      <img src="screenshots/v1.4.0/sensors-click.png" width="100%" alt="Bluetooth sensors, ERG control, and handlebar remotes">
       <p><strong>Sensors, ERG & Remotes</strong><br>
       Pair smart trainers (<code>FTMS</code> / <code>Cycling Power</code>), heart rate straps, and compatible Bluetooth handlebar remotes with live button feedback and per-controller <strong>Button Mapping</strong> right inside Sensors.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="screenshots/v1.3.0/ride-sync.png" width="100%" alt="Synchronized whole-minute start overlay">
+      <img src="screenshots/v1.4.0/ride-sync.png" width="100%" alt="Synchronized whole-minute start overlay">
       <p><strong>Train Together with Sync :00</strong><br>
       Share the workout text with <strong>Copy</strong>, paste it on both Macs, and start at the exact same second using system clock time — no accounts needed.</p>
     </td>
     <td width="50%" valign="top">
-      <img src="screenshots/v1.3.0/summary-1440.png" width="100%" alt="Post-ride analytics and TCX export summary">
+      <img src="screenshots/v1.4.0/summary-1440.png" width="100%" alt="Post-ride analytics and TCX export summary">
       <p><strong>Honest Post-Ride Summary</strong><br>
       Review Duration, Avg Power, NP, IF, TSS, target accuracy, time in zones, and export clean <code>Metric_*.tcx</code> files to <code>Downloads</code>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="screenshots/v1.4.0/zen-1440.png" width="100%" alt="Zen Mode closed-loop heart-rate Zone 2 view">
+      <p><strong>Zen Mode (Heart-Rate Zone 2)</strong><br>
+      Open-ended aerobic riding in a warm daylight layout: closed-loop FTMS ERG control gently adjusts watts to hold your target heart rate steady without overshoot.</p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="screenshots/v1.4.0/zen-summary-1440.png" width="100%" alt="Zen post-ride summary with aerobic drift and HR equilibrium">
+      <p><strong>Zen Aerobic Summary</strong><br>
+      Inspect synchronized heart-rate and power trajectories, time in target HR band (<code>±3 bpm</code>), Pw:HR cardiac drift, total work (<code>kJ</code>), and export to TCX.</p>
     </td>
   </tr>
 </table>
@@ -67,6 +79,7 @@ Ride alongside your bike computer as a distraction-free display companion — or
 ## Highlights
 
 - **Focused Instrument Cockpit** — Matte high-contrast 3-column telemetry (`Power`, `Cadence`, `Heart Rate`) with `SF Pro Expanded` typography, calibrated target gauges, calm steady-state readouts with crisp out-of-target action cues, and an always-visible wall clock (even while paused).
+- **Zen Mode (Heart-Rate Zone 2)** — Open-ended aerobic riding in a calm daylight paper view (`Zen` button in the header): closed-loop FTMS ERG control smoothly modulates resistance to hold your target heart rate (`±1 bpm` controls), paired with a dedicated summary for work (`kJ`), time in HR band, and Pw:HR aerobic drift.
 - **Offline Custom Workouts (`⌘ N`)** — Write workouts in compact text syntax with a live profile chart, IF/TSS metrics, parser notices, and interval breakdown, pick from 4 built-in templates, or import `.txt` files and clipboard text. Everything stays local on your Mac.
 - **Live Workout Intensity (`50%`–`150%`)** — Dial target watts up or down in `±5%` steps mid-ride from the cockpit bar, keyboard (`↑` / `↓`, `0` to reset), or a mapped handlebar remote button without interrupting ERG control.
 - **Optional Intervals.icu Sync** — Enter a personal API key in **Settings (`⌘ ,`)** to load scheduled workouts (today + 6 days) and your Ride FTP. Keys stay exclusively in the **macOS Keychain** with strictly read-only HTTPS GET calls.

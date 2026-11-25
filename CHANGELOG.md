@@ -5,6 +5,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Sem
 
 ## [Unreleased]
 
+## Version 1.4.0 (Build 7) – 2026-11-25
+
+### Highlights
+- **Zen Mode — Closed-Loop Heart-Rate Training (`Zone2Session`, `HeartRateErgController`, `ZenView`, `ZenStyle`, `Beeper`):** Added an open-ended Zone 2 riding mode accessible from the Home sidebar **Zen** pill (and `Workout → Zen …`) with a first-entry ERG safety prompt, warm daylight paper palette (`ZenPalette`), editorial serif typography, soft radial reveal transition, and synthesized harmonic entry/start chimes.
+- **Stable Heart-Rate ERG Controller (`HeartRateErgController`):** Modulates trainer FTMS ERG wattage automatically every `6 s` using exponentially smoothed heart rate, a `32 s` lookahead equilibrium projection, FTP-scaled slew-rate limits, quiet target deadband, post-coasting settle holds, and direction-reversal hysteresis so physiological HR lag does not trigger wattage oscillation. Adjustable live via `−1` / `+1` bpm controls, inline target editing, `↑` / `↓` / `+` / `−` / `0` keyboard shortcuts, or mapped handlebar remote actions (default `72%` of `maxHeartRate`).
+- **Editorial Zen Summary & Aerobic Decoupling (`ZenSummaryView`, `RideSummary`):** Added a dedicated Zen summary screen showing work in kJ, average target watts, min/avg/max HR, synchronized heart-rate & power trajectories, time-in-target band balance (`±3 bpm`), **Pw:HR cardiac drift** (once at least 2 minutes of paired power/HR data exist), and standard **TCX** export support.
+- **Idle ERG Hold, Responsive Home Scaling & Teal Default (`AppModel`, `HomeView`, `Theme`, `Components`):** When **ERG control by Metric** is enabled, Metric now holds trainers at a gentle `50 W` idle load on non-active screens (`Home`, `Settings`, `Summary`, and `Ready`); added proportional `HomeLayout` scaling across window sizes; and updated the default accent color from `Titanium` to `Teal` (`0x4FA3B0`).
+- **Tests:** Added `Zen Mode & HR ERG Controller` unit coverage (`Zone2ZenTests`), bringing the suite to **140 tests in 22 suites**.
+
 ## Version 1.3.0 (Build 6) – 2026-11-15
 
 ### Highlights
